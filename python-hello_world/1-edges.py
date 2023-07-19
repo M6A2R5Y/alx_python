@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 word = "Holberton"
-print("word_first_3: {}".format(word[:3]))
-print("word_last_2: {}".format(word[7:]))
-print("middle_word: {}".format(word[1:8]))
+print("First 3 letters: {}".format(word[:3]))
+print("Last 2 letters: {}".format(word[7:]))
+print("middle word: {}".format(word[1:8]))
