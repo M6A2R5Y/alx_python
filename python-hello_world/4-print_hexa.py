@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-def aj():
-    aj = 1
-    while aj <= 98:
-        print("{0} = {1}\n".format(aj, hex(aj)), end="")
-        aj += 1
+for i in range(99):
+    print("{0} = {1}".format(i, hex(i)))
 
-if __name__ == "__main__":
-    aj()
