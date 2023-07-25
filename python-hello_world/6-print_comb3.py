@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-for digits in range(10):
-    for digits in range(digits + 1, 10):
-        print("{:02d}".format(digits * 10 + digits), end=", " if digits < 8 or digits < 9 else "\n",)
+for a in range(10):
+    for j in range(a + 1, 10):
+        m = "{:02d}".format(a * 10 + j)
+        print(m, end=", " if (a, j) != (8, 9) else "\n",)
 
