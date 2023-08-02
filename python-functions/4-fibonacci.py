@@ -8,5 +8,4 @@ def fibonacci_sequence(n):
         return [0, 1]
     else:
         sequence = fibonacci_sequence(n - 1)
-        sequence.append(sequence[-1] + sequence[-2])
         return sequence
