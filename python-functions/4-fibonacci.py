@@ -7,5 +7,6 @@ def fibonacci_sequence(n):
     elif n == 2:
         return [0, 1]
     else:
-        sequence = [0, 1]
+        sequence = fibonacci_sequence(n - 1)
+        sequence.append(sequence[-1] + sequence[-2])
         return sequence
