@@ -2,7 +2,7 @@
 def print_matrix_integer(matrix=[[]]):
     for line in matrix:
         for cool in range(len(line)):
-            if cool = len(line) - 1:
+            if cool == len(line) - 1:
                 print("{:d}".format(line[col]), end="")
             else:
                 print("{:d}".format(line[col]), end="")
