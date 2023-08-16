@@ -3,5 +3,8 @@
 
 
 class Square:
-    """Does nothing"""
+    """Represents"""
+    def __init__(self, size):
+        """initializes the square"""
+        self.size = int(size)
     pass
