@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Rectangle Module
 ~~~~~~~~~~~~~~~~
@@ -10,7 +11,6 @@ Classes:
 
 """
 
-from typing import Any
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 class Rectangle(BaseGeometry):
@@ -20,14 +20,13 @@ class Rectangle(BaseGeometry):
     Attributes:
         __width (int): The width of the rectangle.
         __height (int): The height of the rectangle.
-        
+
     Methods:
-        __init__(width: int, height: int):
+        __init__(width, height):
             Initializes a new Rectangle instance with the specified width and height.
 
     """
-
-    def __init__(self, width: int, height: int) -> None:
+    def __init__(self, width, height):
         """
         Initialize a Rectangle instance with the specified width and height.
 
@@ -43,3 +42,4 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)
         self.__width = width
         self.__height = height
+        
