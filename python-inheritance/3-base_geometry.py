@@ -7,4 +7,5 @@ This module implements an object skeleton for BaseGeometry
 class BaseGeometry:
     """skeleton
     """
-    pass
+    def display(self):
+        return
