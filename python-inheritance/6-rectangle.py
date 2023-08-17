@@ -1,31 +1,14 @@
 #!/usr/bin/python3
 """
-Rectangle Module
-~~~~~~~~~~~~~~~~
-
-This module implements a Rectangle class that inherits from the BaseGeometry class.
-It provides functionality to create and manipulate rectangles based on their width and height.
-
-Classes:
-    Rectangle: A class representing a rectangle with width and height.
-
+This module implements a Rectangle object
 """
 
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 class Rectangle(BaseGeometry):
+    """Rectangle implementation
     """
-    A class representing a rectangle with width and height.
 
-    Attributes:
-        __width (int): The width of the rectangle.
-        __height (int): The height of the rectangle.
-
-    Methods:
-        __init__(width, height):
-            Initializes a new Rectangle instance with the specified width and height.
-
-    """
     def __init__(self, width, height):
         """
         Initialize a Rectangle instance with the specified width and height.
@@ -42,4 +25,3 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)
         self.__width = width
         self.__height = height
-        
