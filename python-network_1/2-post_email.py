@@ -6,12 +6,11 @@ Usage: ./2-post_email.py <URL> <email>
 import sys
 import requests
 
-
 if __name__ == "__main__":
-    url = input("test@test.com")
-    email = input("Enter the email: ")
+    url = sys.argv[1]
+    email = sys.argv[2]
 
-    data = {'Email': email}
+    data = {'email': email}  # Corrected the key to 'email'
     response = requests.post(url, data=data)
 
     print(response.text)
