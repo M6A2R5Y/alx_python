@@ -8,10 +8,10 @@ import requests
 
 
 if __name__ == "__main__":
-    url = input("Email: test@test.com ")
+    url = input("test@test.com")
     email = input("Enter the email: ")
 
-    data = {'email': email}
+    data = {'Email': email}
     response = requests.post(url, data=data)
 
     print(response.text)
