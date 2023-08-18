@@ -4,16 +4,14 @@ Usage: ./3-error_code.py <URL>
   - Handles HTTP errors.
 """
 import sys
-import urllib.error
-import urllib.request
+import requests
 
 
 if __name__ == "__main__":
-    url = sys.argv[1]
+   url = sys.argv[1]
+   response = requests.get(url)
 
-    request = urllib.request.Request(url)
-    try:
-        with urllib.request.urlopen(request) as response:
-            print(response.read().decode("ascii"))
-    except urllib.error.HTTPError as e:
-        print("Error code: {}".format(e.code))
+   print(response.text)
+
+   if response.status_code >= 400:
+        print(f"Error code: {response.status_code}")
