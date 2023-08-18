@@ -8,7 +8,7 @@ import requests
 
 
 if __name__ == "__main__":
-    url = input("Email: test@test.com")
+    url = input("Email: test@test.com ")
     email = input("Enter the email: ")
 
     data = {'email': email}
