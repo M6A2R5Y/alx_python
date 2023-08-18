@@ -5,10 +5,11 @@ Usage: ./1-hbtn_header.py <URL>
 import sys
 import requests
 
-
 if __name__ == "__main__":
     url = sys.argv[1]
 
     response = requests.get(url)
-    with requests(response) as response:
-        print(dict(response.headers).get("X-Request-Id"))#!/usr/bin/python3
+    x_request_id = response.headers.get("X-Request-Id")
+    
+    print(x_request_id)
+
